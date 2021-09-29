@@ -1,4 +1,4 @@
-//
+ //
 // Created by lufe0 on 7/05/2021.
 //
 
@@ -12,6 +12,7 @@
 #include "Juego.h"
 #include "Mayor13.h"
 #include "DosColores.h"
+#include "PPT.h"
 
 
 using std::cin;
