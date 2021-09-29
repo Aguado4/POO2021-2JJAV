@@ -1,0 +1,3 @@
+C:/Users/juanj/POO2021-2JJAV/Git/CasinoEstudiantes/cmake-build-debug-mingw/CMakeFiles/casino.dir
+C:/Users/juanj/POO2021-2JJAV/Git/CasinoEstudiantes/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Users/juanj/POO2021-2JJAV/Git/CasinoEstudiantes/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

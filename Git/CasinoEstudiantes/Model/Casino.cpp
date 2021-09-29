@@ -15,13 +15,13 @@ Casino::Casino() {
     juegosDisponibles.push_back(juego1);
     DosColores * juego2 = new DosColores();
     juegosDisponibles.push_back(juego2);
-    // Agregar aqui los demas juegos
+    /*Agregar aqui los demas juegos*/
     PPT * juego3 = new PPT();
-    juegosDisponibles.push_back(juego2);
+    juegosDisponibles.push_back(juego3);
 }
 
 void Casino::agregarJugador(long id, string nombreJugador, double dinero) {
-    // Se agrega jugador solo si no existe con anticipacion
+    /*Se agrega jugador solo si no existe con anticipacion*/
     if (!verExisteJugador(id)){
         // Se convierte el dinero a Gonzos
         float cantGonzos = convertirPesosAGonzos(dinero);

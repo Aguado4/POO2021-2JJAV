@@ -28,7 +28,7 @@ void View::agregarJugador()
     // Esta linea de codigo controla la excepcion que lanza el controller y lo muestra en pantalla
     try {
         casino.agregarJugador(idJugador, nombreJugador, dineroPesos);
-    } catch (std::domain_error ex) {
+    } catch (std::domain_error &ex) {
         // Controla la aparecion de errores.
         // what es el metodo que muestra el mensaje de error de las excepciones
         cout << "ERROR: " << ex.what();
@@ -37,9 +37,36 @@ void View::agregarJugador()
 
 void View::jugarView(){
     try {
-        throw std::logic_error("Metodo por implementar");
+        long idJugador;
+        cout << "Ingrese el id del jugador para el que quiere jugar \n";
+        cin >> idJugador;
 
-    }catch (std::domain_error ex){
+        float cantGonzos;
+        cout << "Cuantos gonzos desea apostar \n";
+        cin >> cantGonzos;
+
+        // Hace toda la logica de jugar.
+        int idJuego;
+        bool resultado;
+
+        cout << "Elija el juego: " << endl;
+        cout << "1. Mayor a 13." << endl;
+        cout << "2. Dos colores." << endl;
+        cout << "3. PPT" << endl;
+        cout << "Opcion: ";
+        cin >> idJuego;
+
+        resultado = casino.jugar(idJuego, idJugador, cantGonzos);
+        if(resultado)
+        {
+            cout << "Haz ganado!" << endl;
+        }
+        else
+        {
+            cout << "Haz perdido :C" << std::endl;
+        }
+
+    }catch (std::domain_error &ex){
         // Se muestran los mensajes de excepcion obtenidos
         cout << ex.what();
     }
@@ -93,17 +120,36 @@ void View::mostrarJugador() {
         cout << "Ingrese el id del jugador: ";
         cin >> idJugador;
         casino.verInfoJugador(idJugador);
-    } catch (std::domain_error ex){
+    } catch (std::domain_error &ex){
         // Se muestra un error si el usuario no existe
         cout << ex.what();
     }
 }
 
 void View::retirarJugador() {
-    throw std::logic_error("Metodo por implementar");
+    long idJugador;
+    try {
+        cout << "Ingrese el id del jugador: ";
+        cin >> idJugador;
+        casino.verInfoJugador(idJugador);
+        casino.retirarJugador(idJugador);
+        cout << "Jugador retirado con exito." << std::endl;
+    } catch (std::domain_error ex){
+        // Se muestra un error si el usuario no existe
+        cout << ex.what();
+    }
 }
 
 void View::recargarGonzos()
 {
-    throw std::logic_error("Metodo por implementar");
+    long idJugador;
+    try {
+        cout << "Ingrese el id del jugador: ";
+        cin >> idJugador;
+        casino.recargarGonzos(idJugador);
+        cout << "Recarga realizada con exito." << std::endl;
+    } catch (std::domain_error ex){
+        // Se muestra un error si el usuario no existe
+        cout << ex.what();
+    }
 }
