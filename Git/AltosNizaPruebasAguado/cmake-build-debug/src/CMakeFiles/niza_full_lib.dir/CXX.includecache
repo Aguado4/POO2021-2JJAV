@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Admin.cpp
+Admin.h
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Admin.h
+
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Admin.h
+iostream
+-
+map
+-
+Propietario.h
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Propietario.h
+Reventa.h
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Reventa.h
+Fundador.h
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Fundador.h
+
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Fundador.h
+iostream
+-
+Propietario.h
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Propietario.h
+
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Propiedad.h
+iostream
+-
+
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Propietario.h
+iostream
+-
+Propiedad.h
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Propiedad.h
+
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Reventa.h
+iostream
+-
+Propietario.h
+C:/Users/juanj/POO2021-2JJAV/Git/AltosNizaPruebasAguado/src/Model/Propietario.h
+
